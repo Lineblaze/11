@@ -19,11 +19,11 @@
         <section class="sidebar1">
             <div class="sidebar1left">
                 <h1> OUR STRONG <br> ORGANIZATION</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum nisi quis eleifend quam adipiscing vitae.</p>
+                <p>Нажми на кнопку</p>
                 <a href="#1" class="contact"> Contact Us</a>
             </div>
             <div class="sidebar1right">
-                <iframe width="550" height="350" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                <iframe width="550" height="350" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -41,17 +41,17 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
                 <div class="design">
-                    <img src="Diamond.png" alt="Settings" class="two1" width="40">
+                    <img src="Diamond.png" alt="Diamond" class="two1" width="40">
                     <h2>UI /UX Design</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
                 <div class="logobranding">
-                    <img src="Pencil.png" alt="Settings" class="two2" width="40">
+                    <img src="Pencil.png" alt="Pencil" class="two2" width="40">
                     <h2>Logo / Branding</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
                 <div class="animation">
-                    <img src="Truck 2.png" alt="Settings" class="two1" width="40">
+                    <img src="Truck.png" alt="Truck" class="two1" width="40">
                     <h2>Animation</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
@@ -66,11 +66,11 @@
             <hr>
         </div>
         <div class="all">
-            <input class="all1" type="radio" id="test" name="asd"><label for="test1">ALL</label>
-            <input class="all2" type="radio" id="test2" name="asd"><label for="test2">PRINT TEMPLATE</label>
-            <input class="all3" type="radio" id="test3" name="asd"><label for="test3">WEB TEMPLATE</label>
-            <input class="all4" type="radio" id="test4" name="asd"><label for="test4">USER INTERFACE</label>
-            <input class="all5" type="radio" id="test5" name="asd"><label for="test5">MOCK-UP</label>
+            <input class="all1" type="radio" id="test" name="asd"><label> ALL</label>
+            <input class="all2" type="radio" id="test2" name="asd"><label> PRINT TEMPLATE</label>
+            <input class="all3" type="radio" id="test3" name="asd"><label> WEB TEMPLATE</label>
+            <input class="all4" type="radio" id="test4" name="asd"><label> USER INTERFACE</label>
+            <input class="all5" type="radio" id="test5" name="asd"><label> MOCK-UP</label>
         </div>
         <br><br><br>
         <div class="photos">
@@ -88,7 +88,7 @@
             </div>
         </div>   
     </section>
-    <br><br><br><br><br><br>
+    <br><br><br><br><br>
     <section class="team block4">
         <h1>MEET OUR TEAM</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><hr>
@@ -125,7 +125,7 @@
         <h1>Design tips, tricks and freebies. Delivered weekly.</h1>
         <p class="special-sub-title">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
         <div class="sub">
-            <input type="text" placeholder="Email Adress...">
+            <input class="mailInput" type="text" placeholder="Email Adress...">
             <button class="sub2">SUBSCRIBE</button>
         </div>   
     </section>
@@ -139,25 +139,69 @@
             <div class="message">
                 <input type="text" placeholder="Type your message here" class="type">
             </div>
-            <button class="sendmessage">SEND MESSAGE</button>
+            <button class="sendmessage">нажми сюда</button>
         </div>
         <br><br><br>
         <div class="adress">
-            <h3>CONTACT INFO</h3>
+            <h3>НАЖМИТЕ СЮДА</h3>
             <p>Jalalab 24/A, Ambaarkhana, Sylhet,<br> Bangladesh<br><br>redwan@deviserweb.com<br><br>(+88)017 617 46373 </p>
+            <p class="toPrepend"></p>
         </div>
     </section>
     <footer>
         <div class="footer-wrap">
-          <p class="end-text">© Copyright @Junaed 2016, All rights reserved.</p>
-          <div class="socials-footer">
-            <p><a href="#"><img src="twitter.png" alt=""> </a></p>
-            <p><a href="#"><img src="linked.png" alt=""></a></p>
-            <p><a href="#"><img src="google.png" alt=""></a></p>
-            <p><a href="#"><img src="facebook.png" alt=""></a></p>
-          </div>
-          <div style="clear:both"></div>
+            <p class="end-text">© Copyright @Junaed 2016, All rights reserved.</p>
+            <div class="socials-footer">
+                <p><a href="#"><img src="twitter.png" alt=""> </a></p>
+                <p><a href="#"><img src="linked.png" alt=""></a></p>
+                <p><a href="#"><img src="google.png" alt=""></a></p>
+                <p><a href="#"><img src="facebook.png" alt=""></a></p>
+            </div>
+            <div style="clear:both"></div>
         </div>
-      </footer>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // alert('Jquery is ready');
+            
+            $('.sidebar1').addClass('newClass');
+            
+            $('.contact').click(function() {alert('Меня нажали')});
+            
+            $('.sub').find('input.mailInput').css("border", "2px solid red");
+            
+            $('input[type=text]').filter(':nth-child(2)').css("border", "2px solid red");
+            
+            $('.adress').click(function() {
+                $('.adress').toggleClass('active');
+            });
+            
+            $('.name').attr('value', 'John Smith');
+            
+            $('input[type=text]').filter(':nth-child(2)').prop('type','number');
+            
+            $('.adress').trigger('click');
+            $('.adress').on('click', _ => alert('click'));
+            
+            let hidden = false;
+            $('.sendmessage').click(function() {
+                if (hidden) {
+                    $('.message').show('slow');
+                    $('.mail').unwrap();
+                    $('.toPrepend').prepend('<b>Prepended message </b>');
+                    $('.sendmessage').html('Открыто');
+                    hidden = false;
+                } else {
+                    $('.message').hide('slow');
+                    $('.mail').wrap("<div></div>");
+                    $('.toPrepend').append('<b>Appended message </b>');
+                    $('.sendmessage').html('Скрыто');
+                    hidden = true;
+                }
+                
+            });
+        });
+    </script>
 </body>
 </html>

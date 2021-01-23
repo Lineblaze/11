@@ -36,7 +36,7 @@ nav li {
     padding-top: 30px;
     padding-left: 25px;
     padding-right: 25px;
-    font-weight: 38px;
+    font-weight: 100;
 }
 nav ul :hover {
     background-color: #ff3f40;
@@ -60,7 +60,6 @@ nav ul :first-child {
 }
 .sidebar1left p {
     font-size: 16px;
-    width: 90;
     padding-top: 20px;
     color: #6f6d6d;
     margin: 0;
@@ -86,14 +85,13 @@ nav ul :first-child {
 }
 iframe {
     position: relative;
-    right: calc(280 + 10vw);
+    right: calc(280);
     top: -200px;
     -webkit-box-shadow: 0px 0px 30px 0px #000000; 
   box-shadow: 0px 0px 30px 0px #000000;
 }
 .sidebar2 {
     margin-left: 10%;
-    margin-right: 10%;
     padding-top: 5%;
 }
 .sidebar2left {
@@ -104,12 +102,14 @@ iframe {
     font-size: 32px;
     font-weight: 500;
     margin-top: 20px;
+    color:#313030;
 }
 .sidebar2left p {
     font-size: 17px;
     margin-top: 40px;
     padding-top: 20px;
     width: 80%;
+    text-align: justify;
 }
 .learnmore {
     width: 140px;
@@ -140,7 +140,6 @@ iframe {
     width: 15vw;
     margin-bottom: 45px;
 }
-
 .sidebar3 {
     height: 100vh;
 }
@@ -192,17 +191,23 @@ input[type="radio"]:checked+label {
     image-orientation: flip;
     text-align: center;
 }
-
+.design{
+    padding-left: 10%;
+}
+.animation{
+    padding-left: 10% ;
+}
 .photos2 {
     image-orientation: flip;
     text-align: center;
 }
 .photos img {
-    width: 250px;
+    width: 271px;
+    padding: 1%;
 }
 .photos {
-    margin-right: 10vw;
-    margin-left: 10vw;
+    margin-right: 9vw;
+    margin-left: 9vw;
 }
 .team {
     margin-right: 10vw;
@@ -330,7 +335,6 @@ input[type="radio"]:checked+label {
     font-weight: 600;
     transition: .4s;
 }
-
 .get {
     position: relative;
     padding-top: 60px;
@@ -423,6 +427,9 @@ input[type="radio"]:checked+label {
     padding-left:80px;
     color: white;
 }
+.adress.active {
+    background-color: #000;
+}
 .login {
     width:41vw;
     float:left;
@@ -443,7 +450,7 @@ footer {
     background-color: #313030;
 }
 .copy {
-    padding-top:5 0px;
+    padding-top:50px;
     color: #ececec;
     font-size: 12px;
     float: left;
@@ -467,38 +474,37 @@ button {
     background-position: center center;
   }
   
-  .block4 .left-persons {
+.block4 .left-persons {
     float: right;
     width: 800px;
-  }
+}
   
-  .block4 .left-persons .name-main {
+.block4 .left-persons .name-main {
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 30px;
-  }
-  .block4 .left-persons .descr {
+}
+.block4 .left-persons .descr {
     color: #ababab;
     max-width: 600px;
     margin-bottom: 40px;
-  }
-  .block4 .left-persons .socials {
+}
+.block4 .left-persons .socials {
     margin-bottom: 50px;
-  }
-  .block4 .left-persons .socials p{
+}
+.block4 .left-persons .socials p{
     display: inline-block;
     margin-right: 30px;
     width: unset;
     color: #ababab;
     cursor: pointer;
     font-style: italic;
-  }
-  .block4 .left-persons .socials a {
+}
+.block4 .left-persons .socials a {
     color: #ababab;
-  }
-  
-  .block4 .others .person{
+}
+.block4 .others .person{
     display: inline-block;
     width: 188px;
     height: 200px;
@@ -508,11 +514,11 @@ button {
     background-position: center center;
     position: relative;
     overflow: hidden;
-  }
-  .block4 .others .person:last-child {
+}
+.block4 .others .person:last-child {
     margin-right: 0;
-  }
-  .block4 .others .person p {
+}
+.block4 .others .person p {
     color: #fff;
     position: absolute;
     width: 100%;
@@ -525,35 +531,40 @@ button {
     margin: 0;
     line-height: 30px;
     transition: .3s;
-  }
-  .block4 .others .person:hover p {
+}
+.block4 .others .person:hover p {
     bottom: 0;
-  }
-  
+}
 footer {
     background: #313030;
     color: #afafaf;
-  }
-  .footer-wrap {
+}
+.footer-wrap {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 30px;
-  }
+}
   
-  .end-text {
+.end-text {
     float: left;
     line-height: 40px;
-  }
-  
-  .socials-footer {
+}
+.socials-footer {
     float: right;
-  }
-  .socials-footer p {
+}
+.socials-footer p {
     display: inline-block;
     max-width: 30px;
     margin-right: 16px;
-  }
-  .socials-footer p:last-child {
-    margin-right: 0;
-  }
+}
+.socials-footer p:last-child {
+  margin-right: 0;
+}
+
+.newClass {
+    color: #a3b231;
+}
+.toPrepend {
+    max-width: 200px;
+}
